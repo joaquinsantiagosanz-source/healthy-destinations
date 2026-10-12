@@ -90,7 +90,7 @@ if st.button("Check advice", type="primary"):
         col1, col2 = st.columns(2)
 
         with col1:
-            st.metric("Score", f'{result_row["nota"]:.2f}/100' if pd.notna(result_row["nota"]) else "N/A")
+            st.metric("Score", f'{result_row["nota"]}' if pd.notna(result_row["nota"]) else "N/A")
 
         with col2:
             st.write("**Advice**")
